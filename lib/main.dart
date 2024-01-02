@@ -26,15 +26,12 @@ class MyApp extends StatelessWidget {
       home: Home(),
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
       getPages: [
-        GetPage(name: "/", page: () => Home()),
-        GetPage(name: "/first", page: () => FirstPage()),
+        GetPage(name: "/"      , page: () => Home()      ),
+        GetPage(name: "/first" , page: () => FirstPage() ),
         GetPage(name: "/second", page: () => SecondPage()),
-        GetPage(
-            name: "/third",
-            page: () => ThirdPage(),
-            transition: Transition.zoom),
-        GetPage(name: "/getargs", page: () => GetArgsPage()),
-        GetPage(name: "/getparams/:uid", page: () => GetParamsPage()),
+        GetPage(name: "/third" , page: () => ThirdPage()  , transition: Transition.zoom),
+        GetPage(name: "/getargs", page: () => GetArgsPage()           ),
+        GetPage(name: "/getparams/:uid", page: () => GetParamsPage()  ),
         GetPage(name: "/getparams2/:uid", page: () => GetParamsPage2()),
       ],
     );
